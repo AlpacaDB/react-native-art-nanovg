@@ -92,7 +92,8 @@
     "url": "git+https://github.com/robclouth/react-native-art-nanovg.git"
   },
   "scripts": {
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "postinstall": "git clone https://github.com/robclouth/nanovg.git && (cd nanovg && git reset --hard 962c872259e1b20e690991d5a9c000d1317982ab)"
   },
   "version": "2.0.1"
 }

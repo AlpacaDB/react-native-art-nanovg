@@ -84,7 +84,8 @@
 
 - (void)reactSetInheritedBackgroundColor:(UIColor *)inheritedBackgroundColor
 {
-  self.backgroundColor = inheritedBackgroundColor;
+  // this keeps Surface transparent
+  self.backgroundColor = [UIColor clearColor];
 }
 
 @end
